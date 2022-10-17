@@ -131,7 +131,6 @@ def logout():
 
 
 
-
 @app.route("/blogpost" ,methods=['GET','POST'])
 def blogpost():
     if request.method=="POST":
