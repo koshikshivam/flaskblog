@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+    {% block title %}
+          <title>blog page</title>
+    {% endblock title %}
+
+   {% block body  %}
+       <h1>  Welcome to the blog page</h1>
+       {{current_user. username}}
+
+
+       <form method="POST" action="/blogpost">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter title"  name='title'  >
+        </div>
+
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">author</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter author "  name='author'>
+          </div>
+  
+  
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">content</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="write your blog here "  name='content'></textarea>
+        </div>
+        <input type="submit" value="POST" class="btn btn-primary">
+
+      </form>
+
+
+   {% endblock body  %}
+
+
+
+
+
+
+
+
+
+
+
+   
+
